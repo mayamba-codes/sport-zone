@@ -1,0 +1,710 @@
+body{
+    font-family: Arial, sans-serif;
+    margin: 0; 
+    padding-top: 90px;
+}
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    background: purple+yellowgreen+white;
+    padding: 10px 20px;
+    z-index: 2000;
+}
+.logo-circle {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-image: url("images/stadium.jpg");
+    background-size: cover;
+    background-position: center;
+    border: 4px solid #32CD32;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-shrink: 0;
+overflow: hidden;
+}
+.diagonal-Text {
+    transform: rotate(-30deg);
+    color: yellow;
+    font-weight: bold;
+    font-size: 0.7rem;
+    text-align: center;
+}
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #1e3c72, #2a2598);
+    padding-top: 100px;
+}
+.login-form {
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    width: 300px;
+    box-shadow: 0 0 10px rgba(0,0,0,0,3);
+    text-align: center;
+}
+.login-form h2 {
+    margin-bottom: 20px;
+color: #2a5298;
+}
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+.form-group label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #333;
+}
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border-radius: 1px solid #ccc;
+    outline: none;
+}
+.form-group input:focus {
+    border-color: #2a5298;
+    box-shadow: 0 0 6px rgba(42, 82, 152, 0.6);
+}
+.btn-login {
+    width: 100%;
+    padding: 10px;
+    background: #2a5298;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.btn-login:hover {
+    background: #1e3c72;
+}
+.signup-link {
+    margin-top: 15px;
+    font-size: 14px;
+}
+.signup-link a {
+    color: #2a5295;
+    text-decoration: none;
+}
+.signup-link a:hover {
+    text-decoration: underline;
+}
+.form-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0 15px 0;
+font-size: 14px;
+}
+.form-options label {
+    color: #333;
+    cursor: pointer;
+}
+.forgot-password {
+    color: #2a2598;
+    text-decoration: none;
+}
+.forgot-password:hover {
+    text-decoration: underline;
+}
+/*
+nav.logo{
+    color: red;
+    font-size: 1.5rem;
+}
+    */
+nav ul{
+    list-style:  none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+nav ul li {
+    margin-left:  20px;
+}
+nav ul li a {
+    color: fuchsia;
+    text-decoration:none;
+    font-weight: bold;
+}
+nav ul li a:hover {
+    color:red;
+}
+nav ul li a i {
+    margin-right: 6px;
+    color: #ff9800;
+}
+.hero{
+    background: url('images/sports.jpg') center/cover no-repeat;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:yellowgreen ;
+    text-align: center;
+}
+.hero btn{
+    background: red;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 20px;
+}
+.cta {
+    padding: 10px 10px;
+    background: orange;
+    text-align: center;
+    color: #fff;
+}
+.products {
+    padding: 60px 20px;
+    text-align: center;
+    background: url("images/pitch.jpg") no-repeat center/cover;
+}
+.product h1 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #fff;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0,7);
+}
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+    gap: 20px;
+}
+.product-card {
+    background: rgba(255,255,255,0.9);
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0,2);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+.product-card:hover {
+    transform: scale(1.05);
+}
+.product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.product-card h3 {
+    padding: 15px;
+    font-size: 1.2rem;
+    color: #222;
+}
+/*
+.product img {
+    width: 100%;
+    height:auto;
+}
+*/
+.search-box {
+    text-align: center;
+    padding: 2rem;
+    background: forestgreen;
+}
+.search-box input {
+    padding: 10px;
+    width: 60%;
+    max-width: 400px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.about {
+    min-height: 100vh;
+    padding: 80px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    color: yellowgreen;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+    url("images/about.jpg") no-repeat center center/
+    cover;
+    position: relative;
+    z-index: 1;
+}
+.about h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: orange;
+}
+.about p {
+    max-width: 800px;
+    line-height: 1.7;
+    font-size: 1.1rem;
+}
+/*
+.about-section {
+    padding: 60px 20px;
+    background: #f8f;
+    color: #333;
+    line-height: 1.8;
+} 
+.about-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #222;
+}
+.about-section p {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+}
+.about-section h2 {
+    margin-top: 40px;
+    font-size: 2rem;
+    color: #444;
+}
+.about-section ul {
+    list-style: none;
+    padding: 0;
+}
+.about-section ul li {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+.about-section ul li i {
+    color: #28a745;
+    margin-right: 10px;
+}
+    */
+/* ===== BUBBLES (visible, colorful, animated) ===== */
+.bubbles-bg {
+  position: fixed;
+  inset: 0;
+  z-index: -1;              /* behind everything */
+  pointer-events: none;
+  overflow: hidden;
+  background: linear-gradient(135deg, #08121a 0%, #0b3a44 45%, #072B3A 100%);
+}
+
+/* base bubble look (colored, soft, slightly blurred so visible over dark bg) */
+.bubbles-bg span {
+  position: absolute;
+  bottom: -160px;
+  border-radius: 50%;
+  filter: blur(8px);
+  mix-blend-mode: screen;
+  /* gradient inside the bubble to give depth */
+  background: radial-gr adient(circle at 30% 30%, rgba(255,255,255,0.95) 0%,
+                              rgba(0,200,180,0.16) 25%, rgba(0,150,200,0.06) 60%, rgba(0,0,0,0) 100%);
+  opacity: 0.28;
+  animation: bubbleRise linear infinite;
+}
+
+/* stronger colored variants for variety */
+.bubbles-bg .b1 { width:160px; height:160px; left:4%;  animation-duration:24s; animation-delay:0s;  opacity:0.24; background: radial-gradient(circle at 30% 30%, rgba(255,255,255,0.9), rgba(0,198,255,0.24), rgba(0,150,200,0.06)); }
+.bubbles-bg .b2 { width:80px;  height:80px;  left:18%; animation-duration:18s; animation-delay:3s;  opacity:0.26; background: radial-gradient(circle at 30% 30%, rgba(255,255,255,0.9), rgba(0,230,180,0.22), rgba(0,150,200,0.05)); }
+.bubbles-bg .b3 { width:200px; height:200px; left:30%; animation-duration:30s; animation-delay:5s;  opacity:0.20; background: radial-gradient(circle at 25% 25%, rgba(255,230,200,0.95), rgba(255,160,60,0.16), rgba(0,0,0,0)); }
+.bubbles-bg .b4 { width:50px;  height:50px;  left:42%; animation-duration:14s; animation-delay:1s;  opacity:0.30; background: radial-gradient(circle at 30% 30%, rgba(255,255,255,0.9), rgba(120,200,255,0.18), rgba(0,0,0,0)); }
+.bubbles-bg .b5 { width:120px; height:120px; left:57%; animation-duration:22s; animation-delay:4s;  opacity:0.22; background: radial-gradient(circle at 30% 30%, rgba(255,255,255,0.9), rgba(0,200,150,0.2), rgba(0,0,0,0)); }
+.bubbles-bg .b6 { width:70px;  height:70px;  left:68%; animation-duration:20s; animation-delay:2s;  opacity:0.26; background: radial-gradient(circle at 30% 30%, rgba(255,255,255,0.9), rgba(140,230,200,0.15), rgba(0,0,0,0)); }
+.bubbles-bg .b7 { width:150px; height:150px; left:78%; animation-duration:28s; animation-delay:6s;  opacity:0.18; background: radial-gradient(circle at 30% 30%, rgba(255,255,255,0.92), rgba(0,160,220,0.18), rgba(0,0,0,0)); }
+.bubbles-bg .b8 { width:36px;  height:36px;  left:88%; animation-duration:16s; animation-delay:7s;  opacity:0.28; background: radial-gradient(circle at 30% 30%, rgba(255,255,255,0.95), rgba(0,210,200,0.18), rgba(0,0,0,0)); }
+.bubbles-bg .b9 { width:220px; height:220px; left:86%; animation-duration:32s; animation-delay:8s;  opacity:0.15; background: radial-gradient(circle at 25% 25%, rgba(255,255,255,0.9), rgba(255,170,80,0.14), rgba(0,0,0,0)); }
+.bubbles-bg .b10{ width:92px;  height:92px;  left:34%; animation-duration:21s; animation-delay:9s;  opacity:0.24; background: radial-gradient(circle at 30% 30%, rgba(255,255,255,0.92), rgba(0,190,240,0.14), rgba(0,0,0,0)); }
+ 
+@keyframes bubbleRise {
+  0% { transform: translateY(0) translateX(0) scale(0.98); opacity: 0.05; }
+  30% { opacity: 0.28; }
+  70% { opacity: 0.20; }
+  100% { transform: translateY(-120vh) translateX(20px) scale(1.05); opacity: 0; }
+}
+
+/* ===== SERVICES SECTION (frosted glass cards) ===== */
+.services {
+  position: relative;
+  padding: 80px 20px;
+  color: white;
+  background: transparent; 
+  overflow: visible;
+}
+
+.services-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  z-index: 2; 
+}
+
+.services h1 {
+  font-size: 2.6rem;
+  margin-bottom: 8px;
+  color: #ffd08a;
+  text-shadow: 0 4px 18px rgba(0,0,0,0.6);
+}
+
+.services .lead {
+  margin: 0 auto 28px auto;
+  color: rgba(255,255,255,0.92);
+  max-width: 860px;
+  line-height: 1.6;
+  font-size: 1.02rem;
+}
+
+/* grid */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+  margin-top: 30px;
+}
+.contact {
+padding: 2rem; 
+form{
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+}
+form input, form textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+}
+form button {
+    background: purple;
+    color: orangered;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+.contact-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+.info-card {
+    background: pink;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0,1);
+}
+.info-card i {
+    font-size: 2rem;
+    color: orange;
+    margin-bottom: 10px;
+}
+.socials {
+    margin-top: 30px;
+}
+.socials a {
+    margin: 0 10px;
+    font-size: 1.8rem;
+    color: orange;
+    transition: color 0.3s;
+}
+.location-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #007bff;
+    color: white; 
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+.location-btn i {
+    margin-right: 8px;
+}
+.location-btn:hover {
+    background: #0056b3;
+    transform: scale(1.05);
+}
+}
+.socials a:hover {
+    color: darkorange;
+}
+.portifolio-hero {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    color: white;
+}
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid orange;
+    margin: 100px 20px 20px 20px;
+    margin-bottom: 20px;
+}
+.portifolio-hero h1 {
+    font-size: 2.2rem;
+}
+.portifolio-hero span {
+    color: orange;
+    font-weight: bold;
+}
+.portifolio-hero .btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 25px;
+    background: orange;
+    color: #fff;
+    border-radius: 6px;
+    text-decoration: none;
+}
+.portifolio-hero .btn:hover {
+    background: darkorange;
+}
+.about-me {
+    padding: 50px 20px;
+    text-align: center;
+}
+.about-me h2 {
+    color: orange;
+    margin-bottom: 20px;
+}
+.skills {
+    background: #111;
+    color: white;
+    padding: 50px 20px;
+}
+.skills h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: orange;
+}
+.skill {
+    margin-bottom: 20px;
+}
+.skill  span {
+    display: block;
+    margin-bottom: 5px;
+}
+.progress {
+    background: rgba(255,255,255,0.2);
+    border-radius: 20px;
+    overflow: hidden;
+}
+.progress div {
+    height: 12px;
+    background: orange;
+}
+.experience {
+    padding: 60px 20px;
+    text-align: center;
+}
+.exp-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+.exp-card {
+    background: rgba(0,0,0,0,05);
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+.exp-card i {
+    font-size: 2rem;
+    color: orange; 
+    margin-bottom: 10px;
+}
+.projects {
+    background: #222;
+    padding: 60px 20px;
+    color: white;
+    text-align: center;
+}
+.projects h2 {
+    margin-bottom: 30px;
+    color: orange;
+}
+.project-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit minmax(250px, 1fr));
+    gap: 25px;
+}
+.project-card {
+    background: rgba(255,255,255,0.1);
+    border-radius: 12px;
+    overflow: hidden;
+}
+.project-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+.project-card h3 {
+    padding: 15px;
+}
+.social-links {
+    text-align: center;
+    padding: 40px;
+}
+.social-links a {
+    margin: 0 12px;
+    font-size: 1.8rem;
+    color: orange;
+    transition: color 0.3s;
+}
+.social-links a:hover {
+    color: #fff;
+}
+.site-footer {
+background: forestgreen;
+color: white;
+text-align: center;
+padding: 15px 0;
+margin-top: 40px;
+font-size: 14px;
+}
+.whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 25px;
+    background-color: #25D366;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 32px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+    z-index: 100;
+    transition: transform 0.3s ease, box shadow 0.3s ease;
+}
+.whatsapp-float i {
+    margin-top: 14px;
+}
+.whatsapp-float:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 30px rgba(37,211,102,0.6);
+}
+.gallery-section {
+   text-align: center;
+   padding: 50px 20px;
+   background: linear-gradient(135deg, #f0f0f0, #d6e4ff);
+   color: #222;
+}
+.gallery-section h2 {
+   font-size: 2em;
+   margin-bottom: 10px;
+}
+.gallery-section p {
+   color: #555;
+   margin-bottom: 40px;
+}
+.gallery-grid {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+   gap: 20px;
+   justify-items: center;
+}
+.gallery-item {
+   width: 100%;
+   max-width: 300px;
+   border-radius: 15px;
+   box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+   transition: transform 0.4s ease, box-shadow 0.4s ease;
+   cursor: pointer;
+}
+.gallery-item:hover {
+   transform: scale(1.08);
+   box-shadow: 0 6px 15px rgba(0,0,0,0.4);
+}
+#lightbox {
+display: none;
+position: fixed;
+z-index: 2000;
+left: 0;
+top: 0;
+width: 100%;
+height: 100%;
+background: rgba(0,0,0,0.9);
+justify-content: center;
+align-items: center;
+}
+#lightbox img {
+   max-width: 80%;
+   max-height: 80%;
+   border-radius: 10px;
+   box-shadow: 0 0 20px rgba(255,255,255,0.4);
+}
+#close-lightbox {
+   position: absolute;
+   top: 20px;
+   right: 40px;
+   font-size: 40px;
+   color: white;
+   cursor: pointer;
+   transition: color 0.3s;
+}
+#close-lightbox:hover {
+   color: red;
+}
+site-footer {
+background: forestgreen;
+color: white;
+text-align: center;
+padding: 15px 0;
+margin-top: 40px;
+font-size: 14px;
+}
+.video-container {
+   position: relative;
+   height: 100vh;
+   overflow: hidden;
+}
+video{
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   min-width: 100%;
+   min-height: 100%;
+   width: auto;
+   height: auto;
+   z-index: -1;
+   transform: translate(-50%, -50%);
+   background-size: cover;
+}
+.overlay {
+   position: absolute;
+   top: 0;
+   left: 0;
+   height: 100%;
+   width: 100%;
+   background: rgba(0,0,0,0.5);
+   color: forestgreen;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+}
+.overlay h1 {
+   font-size: 60px;
+   margin: 0;
+}
+.overlay p {
+   font-size: 20px;
+   margin: 10px 0;
+}
+.btn {
+   margin-top: 20px;
+   padding: 12px 25px;
+   background: orange;
+   color: magenta;
+   text-decoration: none;
+   border-radius: 5px;
+   font-size: 16px;
+}
